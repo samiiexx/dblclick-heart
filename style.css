@@ -1,0 +1,67 @@
+/**
+ * Copyright 2021 sfchi
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Oswald');
+ 
+
+ *{
+    box-sizing: border-box;
+}
+
+ body {
+     font-family: 'Oswald', sans-serif;
+     margin: 0;
+    text-align: center;
+    background-color: #f6d4d4;
+ }
+
+ h1 {
+     margin-bottom: 0;
+     text-align: center;
+ }
+
+ small {
+     display: block;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .fa-heart {
+     color: red;
+ }
+
+ .loveMe {
+     height: 440px;
+     width: 300px;
+     background: url('https://images.unsplash.com/photo-1588278409822-17cd6339d16d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80') no-repeat center center/cover;
+    margin: auto;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25) 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .loveMe .fa-heart {
+        position: absolute;
+        animation: grow .6s linear;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    @keyframes grow {
+        to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+        }
+    }
